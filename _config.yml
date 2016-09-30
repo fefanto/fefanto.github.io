@@ -1,2 +1,3 @@
 name: Fefanto - github personal page
 markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
