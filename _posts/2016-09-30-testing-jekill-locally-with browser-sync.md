@@ -4,7 +4,7 @@ title: "Testing Jekyll locally with browser-sync"
 date: 2016-09-30
 ---
 
-ok, so this is just a tiny tiny add-on to the pages I mentioned in my [previous](/blog/2016-09-30-my first-and-only-github-site.html) post.
+ok, so this is just a tiny tiny add-on to the pages I mentioned in my [previous](/blog/2016-09-30-my-first-and-only-github-site.html) post.
 
 My next steps: 
 
