@@ -11,7 +11,7 @@ My next steps:
 1. run jekyll locally and avoid seing updates only on commits. This is easy :
 	* Install jekyll using the instructions [here](https://jekyllrb.com/docs/installation/)
 	* open a terminal into your github page folder
-	* type 'jekyll build --watch'. Jekyll will fill up the _site folder (created following [this](http://jmcglone.com/guides/github-pages/ target="_blank) post) 
+	* type 'jekyll build --watch'. Jekyll will fill up the _site folder (created following [this](http://jmcglone.com/guides/github-pages/) post) 
 
 2. avoid clicking the browser refresh button a million times when developing the site.
 	* install [browser sync](https://www.browsersync.io/)

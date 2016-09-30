@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "My first (and only) github site"
+title: "My first (and hopefully only) github site"
 date: 2016-09-30
 ---
 
@@ -13,5 +13,5 @@ The purpose of this site is :
 
 Credits for the superbasic superdraft version of this site : 
 
-* [Github pages home](https://pages.github.com/ target="_blank)
-* Step by step guite to setup a github personal page and jekyll blog from [Jonathan McGlone](http://jmcglone.com/guides/github-pages/ target="_blank)
+* [Github pages home](https://pages.github.com/ target="_blank")
+* Step by step guite to setup a github personal page and jekyll blog from [Jonathan McGlone](http://jmcglone.com/guides/github-pages/ target="_blank")
