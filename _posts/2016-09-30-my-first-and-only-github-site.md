@@ -7,7 +7,7 @@ date: 2016-09-30
 
 The purpose of this site is : 
 
-* a brief description of myself 
+* a brief description of myself... 
 * a list of my projects on github, as well as external projects.
 * (this takes 99% of the purpose of this site) getting better at html5/css/js/angular/git...you get it.
 

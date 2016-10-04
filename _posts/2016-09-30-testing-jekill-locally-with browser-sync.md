@@ -18,6 +18,7 @@ My next steps:
 	* open a terminal into your _site folder
 	* type 'browser-sync start --server --directory --files "**/*"'. This will launch a Chrome (or whaterver your default browser is) tab which automatically updates on every code edit. 
 
+another great resource [here](https://nvbn.github.io/2015/06/19/jekyll-browsersync/).
 
 This way, when you edit a file in your github page folder (1) jekyll will watch the edit and automatically regenerate the _site folder, and (2) browser-sync, which is watching that folder, will update the browser. This gets things going a little smoother, especially if you have a dual monitor setup.
 
