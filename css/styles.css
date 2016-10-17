@@ -11,6 +11,10 @@ a {
     color: #1AB2C7;
 }
 
+.not-found {
+  padding-top: 100px;
+}
+
 
 /** HEADER **/
 #header-nav {
@@ -124,6 +128,38 @@ a {
 }
 
 /* END HOME PAGE */
+
+
+/* Projects PAGE */
+.project-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 5px auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-categories-title + div {
+  margin-bottom: 50px;
+}
+/* END Projects PAGE */
+
 
 /* FOOTER */
 .panel-footer {
@@ -277,6 +313,15 @@ navbar-brand h1 { /* site name */
   #menu-tile, #specials-tile {
     width: 280px;
     margin: 0 auto 15px;
+  }
+
+   .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
   }
 }
 

@@ -2,4 +2,4 @@ name: Fefanto - github personal page
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
-exclude: [node_modules, gulpfile.js, wireframe]
+exclude: [node_modules, gulpfile.js, devstart.sh, wireframe, index_dev.html]
