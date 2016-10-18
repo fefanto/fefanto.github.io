@@ -7,16 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{{ page.title }}</title>
 	
-  <style type="text/css">
-    {% capture include_to_scssify %}
-      {% include style.scss %}
-    {% endcapture %}
-    {{ include_to_scssify | scssify }}
-  </style>
+  
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
 
-
-  <!--<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
-	<link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">-->
 	
 
   
