@@ -5,12 +5,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>{{ page.title }}</title>
+	<title>{{ site.title }}</title>
 	
   
   <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css">
-
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
   <!-- <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>-->
 </head>
@@ -19,39 +19,44 @@
 		<nav id="header-nav" class="navbar navbar-default">
 			<div class="container">
 				<div class="navbar-header">
-					<a href="{{ site.baseurl }}/index.html" class="pull-left visible-md visible-lg">
+					<!-- <a href="{{ site.baseurl }}/index.html" class="pull-left ">
 						<div id="logo-img"></div>
-					</a>
+					</a> -->
 					<div class="navbar-brand">
-						<a href="{{ site.baseurl }}/index.html"><h1>{{ page.title }}</h1></a>
+						<a href="{{ site.baseurl }}/index.html"><h1>{{ site.title }}</h1></a>
 					</div>
 
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+					<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
+            <span class="icon-bar"></span>
 					</button>
 				</div>
 
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li>
-              <a href="{{ site.baseurl }}/about.html">
-                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+           <li>
+              <a href="{{ site.baseurl }}/blog/">
+                <span class="glyphicon glyphicon-list"></span><br class="hidden-xs"> Blog</a>
             </li>
             <li>
-              <a href="{{ site.baseurl }}/projects.html">
-                <span class="glyphicon glyphicon-cog"></span><br class="hidden-xs"> Projects</a>
+              <a href="{{ site.baseurl }}/blog/categories/">
+                <span class="glyphicon glyphicon-cog"></span><br class="hidden-xs"> Categories</a>
             </li>
             <li>
-              <a href="{{ site.baseurl }}/blog.html">
-                <span class="glyphicon glyphicon-tags"></span><br class="hidden-xs"> Blog</a>
+              <a href="{{ site.baseurl }}/blog/tags/">
+                <span class="glyphicon glyphicon-tags"></span><br class="hidden-xs"> Tags</a>
             </li>
             <li>
-              <a href="{{ site.baseurl }}/search.html">
+              <a href="{{ site.baseurl }}/search/">
                 <span class="glyphicon glyphicon-search"></span><br class="hidden-xs"> Search</a>
+            </li>
+             <li>
+              <a href="{{ site.baseurl }}/about/">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
             </li>
              <!-- <li id="phone" class="hidden-xs">
               <a href="tel:410-602-5008">
@@ -78,28 +83,24 @@
 
         <div id="hours" class="col-sm-4">
           
-          <span>Contacts</span><br>
-          	<ul>
-          		<li><a href="mailto:fefanto@gmail.com" target="_blank">email</a></li>
-          		<li><a href="https://github.com/fefanto" target="_blank">github</a></li>
-          		<li><a href="https://twitter.com/fefanto" target="_blank">twitter</a></li>
-				<li><a href="https://www.youtube.com/channel/UC8YVwdRiuwJnBlpOT54lUwA" target="_blank">youtube</a></li>
-				<li><a href="http://stackoverflow.com/users/399674/fefanto" target="_blank">stack overflow</a></li>
-         	</ul>
+          <span>Contacts:</span><br>
+ 
+          {% include personal-info.html %}
+          
           <hr class="visible-xs">
         </div>
 
 
-        <div id="address" class="col-sm-4">
-          <span>Open source</span><br>
-          This site is hosted on github<br>
-          Download:  &emsp; <a href="https://github.com/fefanto/fefanto.github.io/zipball/master">zip</a> &emsp; <a href="https://github.com/fefanto/fefanto.github.io/tarball/master">tar.gz</a> 
-          <!--<p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>-->
+        <div id="hours" class="col-sm-4">
+          <span>Open source:</span>
+            {% include github-info.html %}
+            
           <hr class="visible-xs">
         </div>
 
 
-        <div id="testimonials" class="col-sm-4">
+        <div id="hours" class="col-sm-4">
+          <span>Random quote:</span><br>
           <p>"life is so much pleasanter if one is able to believe in one's own latent greatness" [Italo&nbsp;Svevo]</p>
           
         </div>
@@ -114,9 +115,10 @@
 		
 
 	<!-- jQuery (Bootstrap JS plugins depend on it) -->
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/script.js"></script>
+	<script src="{{ site.baseurl }}/js/jquery-2.1.4.min.js"></script>
+	<script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+	<script src="{{ site.baseurl }}/js/script.js"></script>
   {% include analytics.html %}
+  {% include disqus-count.html %}
 </body>
 </html>

@@ -3,7 +3,7 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #B02D00;
+  background-color: #623D00;
   font-family: 'Helvetica', sans-serif;
 }
 
@@ -25,13 +25,14 @@ a {
 
 #logo-img {
   background: url('../images/logo.png') no-repeat;
-  width: 64px;
-  height: 64px;
-  margin: 10px 15px 10px 0;
+  width: 259px;
+  height: 50px;
+  margin: 20px 15px 10px 0;
 }
 
 .navbar-brand {
-  /*padding-top: 25px;*/
+  font-size: 20px;
+  padding-top: 25px;
   vertical-align: top;
 }
 
@@ -71,13 +72,14 @@ a {
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #00353C;
+   
 }
 
 .navbar-header button.navbar-toggle {
   clear: both;
   margin-top: -40px;
-}
 
+}
 
 
 #gliphicon a span{ /* BUG: NOT WORKING-  check http://stackoverflow.com/questions/18334851/change-the-color-of-glyphicons-to-blue-in-some-but-not-at-all-places-using-boot*/
@@ -248,7 +250,7 @@ navbar-brand h1 { /* site name */
 @media (max-width: 767px) {
   /* Header */
   .navbar-brand {
-    padding-top: 5px;
+    padding-top: 10px;
     height: 50px;
   }
 
@@ -304,7 +306,7 @@ navbar-brand h1 { /* site name */
 @media (max-width: 479px) {
   /* Header */
   .navbar-brand h1 { /* Restaurant name */
-    padding-top: 5px;
+    padding-top: 10px;
      font-size: 36px;
   }
   /* End Header */
@@ -324,5 +326,52 @@ navbar-brand h1 { /* site name */
     width: 100%;
   }
 }
+
+
+
+.post-title h1{
+  font-size: 24px;
+}
+
+
+.post-tag{
+  display:inline-block;
+  background:rgba(106,159,181,0.15);
+  padding:0 .5rem;
+  margin-right:.5rem;
+  border-radius:4px;
+  color:#6a9fb5;
+  font-family:"PT Sans",Helvetica,Arial,sans-serif;
+  font-size:90%;
+  -webkit-transition:all 0.1s ease-in-out;
+  -moz-transition:all 0.1s ease-in-out;
+  transition:all 0.1s ease-in-out}
+
+.post-tag:before{
+  content:"\f02b";
+  font-family:FontAwesome;
+  padding-right:.5em}
+
+.post-tag:hover{
+  text-decoration:none;
+  background:#6a9fb5;
+  color:#fff
+}
+
+
+.personal-info .github-info {
+  font-size: 26px;
+}
+
+.pagination{overflow:hidden;margin-left:-1rem;margin-right:-1rem;font-family:"PT Sans", Helvetica, Arial, sans-serif;color:#ccc;text-align:center}
+.pagination-item{display:block;padding:1rem;border:1px solid #eee}
+a.pagination-item:hover{background-color:#f5f5f5}@media (min-width: 30em){
+  .pagination{margin:3rem 0}
+  .pagination-item{float:left;width:50%}
+  .pagination-item:first-child{margin-bottom:0;border-top-left-radius:4px;border-bottom-left-radius:4px}
+  .pagination-item:last-child{margin-left:-1px;border-top-right-radius:4px;border-bottom-right-radius:4px}
+}
+
+
 
 

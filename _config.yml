@@ -1,5 +1,27 @@
+title: fefanto
 name: Fefanto - github personal page
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+#baseurl: "/"
 
-exclude: [node_modules, gulpfile.js, devstart.sh, wireframe, index_dev.html]
+gems:
+  - jekyll-paginate
+  - jekyll-sitemap
+
+
+markdown: kramdown
+
+
+permalink: pretty
+
+exclude: [node_modules, gulpfile.js, wireframe, index_dev.html]
+
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+#TBD
+paginate: 1
+paginate_path: '/blog/page:num'
+
+
+disqus_short_name: 'fefanto'
