@@ -1,14 +1,16 @@
 /** BASE **/
 
+
+
 body {
   font-size: 16px;
-  color: #fff;
-  background-color: #623D00;
+  color: #414242;
+  background-color: #fcf7ee; 
   font-family: 'Helvetica', sans-serif;
 }
 
 a {
-    color: #1AB2C7;
+    color: #11a1b7;
 }
 
 .not-found {
@@ -18,7 +20,7 @@ a {
 
 /** HEADER **/
 #header-nav {
-  background-color: #FF9F00;
+  background-color: #353535;
   border-radius: 0;
   border: 0;
 }
@@ -42,7 +44,7 @@ a {
   margin-top: 0;
   margin-bottom: 0;
   line-height: .75;
-  color: #00899C;
+  color: #11a1b7;
   vertical-align: middle;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {  /* site title clickable but does not look like link */
@@ -60,7 +62,7 @@ a {
 
 
 #nav-list a:hover {
-  background: #FFAA1E;
+  background: #ce493b;
 }
 #nav-list a span {
   font-size: 1em;
@@ -71,7 +73,7 @@ a {
 
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #00353C;
+  border: 1px solid #11a1b7;
    
 }
 
@@ -168,7 +170,7 @@ a {
   margin-top: 30px;
   padding-top: 35px;
   padding-bottom: 30px;
-  background-color: #FF9F00;
+  background-color: #fcf7ee;
   border-top: 0;
 }
 .panel-footer div.row {
@@ -177,8 +179,12 @@ a {
 #hours, #address {
   line-height: 2;
 }
-#hours > span, #address > span {
-  font-size: 1.3em;
+#contacts > span, #opensource > span , #quote > span{
+  
+}
+
+#contacts >  i, #opensource > a , #quote > a{
+  font-size: 24px;
 }
 #address p {
   color: #557c3e;
@@ -365,7 +371,7 @@ navbar-brand h1 { /* site name */
 
 .pagination{overflow:hidden;margin-left:-1rem;margin-right:-1rem;font-family:"PT Sans", Helvetica, Arial, sans-serif;color:#ccc;text-align:center}
 .pagination-item{display:block;padding:1rem;border:1px solid #eee}
-a.pagination-item:hover{background-color:#f5f5f5}@media (min-width: 30em){
+a.pagination-item:hover{background-color:#fcf7ee}@media (min-width: 30em){
   .pagination{margin:3rem 0}
   .pagination-item{float:left;width:50%}
   .pagination-item:first-child{margin-bottom:0;border-top-left-radius:4px;border-bottom-left-radius:4px}
