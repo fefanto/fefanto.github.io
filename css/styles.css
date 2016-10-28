@@ -6,7 +6,7 @@ body {
   font-size: 16px;
   color: #414242;
   background-color: #fcf7ee; 
-  font-family: 'Helvetica', sans-serif;
+  font-family: 'Source Code Pro', monospace;
 }
 
 a {
@@ -27,9 +27,9 @@ a {
 
 #logo-img {
   background: url('../images/logo.png') no-repeat;
-  width: 259px;
-  height: 50px;
-  margin: 20px 15px 10px 0;
+  width: 51px;
+  height: 51px;
+  margin: 15px 15px 10px 0;
 }
 
 .navbar-brand {
@@ -76,6 +76,13 @@ a {
   border: 1px solid #11a1b7;
    
 }
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+  background-color: #414242;
+  border: 1px solid #fcf7ee;
+}
+
+
 
 .navbar-header button.navbar-toggle {
   clear: both;
@@ -216,13 +223,15 @@ a {
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
+  
   /* Header */
   #logo-img {
-    background: url('../images/logo.png') no-repeat;
-    width: 48px;
-    height: 48px;
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 51px;
+    height: 51px;
     margin: 5px 5px 5px 0;
   }
+  
   /* End Header */
 
  /* Home Page */
@@ -263,7 +272,7 @@ navbar-brand h1 { /* site name */
   .navbar-brand h1 { /* site name */
     padding-top: 10px;
     /*font-size: 1.5em; *//* 1vw = 1% of viewport width */
-    font-size: 36px;
+    font-size: 38px;
   }
  
   #collapsable-nav a { /* Collapsed nav menu text */
@@ -333,11 +342,50 @@ navbar-brand h1 { /* site name */
   }
 }
 
+/*-----------blog & "central" stuff in other pages ---------------*/
 
+.inner-container{
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
 
-.post-title h1{
+.page-subtitle{
   font-size: 24px;
 }
+
+
+.posts-post-title, .post-title{
+  font-size: 24px;
+}
+
+.post-info, .post-tag, .post-cat, .post-more{
+  font-size: 16px;
+}
+
+
+.post-cat{
+  display:inline-block;
+  background:rgba(106,159,181,0.15);
+  padding:0 .5rem;
+  margin-right:.5rem;
+  border-radius:4px;
+  color:#6a9fb5;
+  font-size:90%;
+  -webkit-transition:all 0.1s ease-in-out;
+  -moz-transition:all 0.1s ease-in-out;
+  transition:all 0.1s ease-in-out}
+
+.post-cat:before{
+  content:"\f013";
+  font-family:FontAwesome;
+  padding-right:.5em}
+
+.post-cat:hover{
+  text-decoration:none;
+  background:#6a9fb5;
+  color:#fff
+}
+
 
 
 .post-tag{
@@ -347,8 +395,7 @@ navbar-brand h1 { /* site name */
   margin-right:.5rem;
   border-radius:4px;
   color:#6a9fb5;
-  font-family:"PT Sans",Helvetica,Arial,sans-serif;
-  font-size:90%;
+   font-size:90%;
   -webkit-transition:all 0.1s ease-in-out;
   -moz-transition:all 0.1s ease-in-out;
   transition:all 0.1s ease-in-out}
@@ -364,9 +411,20 @@ navbar-brand h1 { /* site name */
   color:#fff
 }
 
+/* ------- end blog --------*/ 
 
-.personal-info .github-info {
-  font-size: 26px;
+.personal-info i.fa, .github-info i.fa {
+  font-size: 26px; 
+  margin-top: 18px;
+
+}
+
+
+.copyright-info, .copyright-info-benchmarks
+{
+  font-size: 12px; 
+  text-align: center;
+  opacity: 0.8;
 }
 
 .pagination{overflow:hidden;margin-left:-1rem;margin-right:-1rem;font-family:"PT Sans", Helvetica, Arial, sans-serif;color:#ccc;text-align:center}
@@ -377,6 +435,59 @@ a.pagination-item:hover{background-color:#fcf7ee}@media (min-width: 30em){
   .pagination-item:first-child{margin-bottom:0;border-top-left-radius:4px;border-bottom-left-radius:4px}
   .pagination-item:last-child{margin-left:-1px;border-top-right-radius:4px;border-bottom-right-radius:4px}
 }
+
+
+.top-of-page {
+  text-align: right;
+  color:rgba(106,159,181,0.3);
+
+}
+
+.random-quote{
+  margin-bottom: 72px;
+
+}
+
+.changing-quotes
+{
+  position: relative;
+  /*
+  
+  vertical-align:center;
+  */
+  display:inline-block;
+  font-size: 12px;
+  width:80%;
+  opacity: 0.7;
+  
+}
+.changing-quotes p
+{
+  position:absolute;
+  top:.3em;
+  /*
+  left:0;
+  
+  */
+  display:inline-block;
+  opacity:0;
+  transition:all 0.2s ease-out
+}
+
+.changing-quotes p.hidden
+{
+  animation:slide-out 0.6s;
+  -webkit-animation: slide-out 10.6s;
+}
+.changing-quotes p.visible
+{
+  opacity:1;
+  top:0;
+  animation:slide-in 0.6s;
+  -webkit-animation:slide-in 0.6s
+}
+
+
 
 
 

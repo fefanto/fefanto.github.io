@@ -4,17 +4,18 @@ layout: default
 
 
 <div class="inner-container padded">
-      <div class="posts">
+<h2 class="page-subtitle">Blog</h2>
+       <div class="posts">
 
         {% for post in paginator.posts %}
         <div class="preview-post post">
-          <h1 class="h3"><a class="title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+          <h2 class="posts-post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
 
 
           <p class="post-info">{{ post.date | date: "%B %e, %Y" }} • By {{ post.author }} • In 
           
-          <a href="{{ site.baseurl }}{{ post.category_page }}#{{ post.category | slugify }}" class="post-cat">{{ post.category  }}</a>
+          <a href="{{ site.baseurl }}{{ site.category_page }}#{{ post.category | slugify }}" class="post-cat">{{ post.category  }}</a>
 
 
 

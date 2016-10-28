@@ -3,16 +3,25 @@ layout: default
 title: Tags
 ---
 
-<div class="tags-expo">
+<div class="inner-container padded">
+<h2 class="page-subtitle">Tags</h2>
   <div class="tags-expo-list">
     {% for tag in site.tags %}
     <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
+    
     {% endfor %}
   </div>
   <hr/>
   <div class="tags-expo-section">
     {% for tag in site.tags %}
-    <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+    <h2  class="post-tag" id="{{ tag[0] | slugify }}">{{ tag[0] }}
+
+      <a href="{{ site.baseurl }}/blog/tags">
+      <i class="fa fa-level-up top-of-page" aria-hidden="true" title="top of page"></i> 
+    </a>
+
+    </h2>
+    
     <ul class="tags-expo-posts">
       {% for post in tag[1] %}
         <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
