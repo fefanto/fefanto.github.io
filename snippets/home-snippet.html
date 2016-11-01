@@ -1,8 +1,19 @@
+    
+
+<div class="home-subheader">
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    {% assign post = site.posts.first %}
+    {% assign content = post.content %}
+    {% include post-box.html %}
+  </div>
+</div>
+
+<!--
     <div class="jumbotron">
       <img src="images/jumbotron_768.jpg" alt="Picture of restaurant" class="img-responsive visible-xs">
     </div>
 
-    <!-- div id="home-tiles" class="row">
+     div id="home-tiles" class="row">
       <div class="col-md-4 col-sm-6 col-xs-12">
         <a href="#" onclick="$dc.loadMenuCategories();"><div id="menu-tile"><span>menu</span></div></a>
       </div>
