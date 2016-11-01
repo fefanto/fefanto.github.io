@@ -2,7 +2,45 @@
 layout: default
 ---
 
- <div class="inner-container padded">
- <h2>Under construction...</h2>
+<div class="inner-container padded">
+<h2>Under Construction...</h2> 
+  <div class="latest-posts">
+    <h2>Latest Posts</h2> 
+    {% for post in site.posts %}
+  <div class="col-md-4 col-sm-6 col-xs-12">
+      
+    {% include post-box.html %}
+
+
+    {% if forloop.index == site.latest_post_count %}
+      {% break %} 
+    {% endif %} 
+ </div>
+    {% endfor %}
+  
+  </div>
+</div>
+
+
+ <!-- 
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    {% assign post = site.posts.first %}
+    {% assign excerpt = post.excerpt %}
+    {% assign category = post.category %}
+    {% include post-box.html %}
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    {% assign post = site.posts.second %}
+    {% assign excerpt = post.excerpt %}
+    {% assign category = post.category %}
+    {% include post-box.html %}
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-12">
+    {% assign post = site.posts.third %}
+    {% assign excerpt = post.excerpt %}
+    {% assign category = post.category %}
+    {% include post-box.html %}
+   -->
+
  </div>
 

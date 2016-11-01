@@ -9,7 +9,7 @@
                children[idx].className = "hidden";
                idx = (idx + 1) % length;
                children[idx].className = "visible";
-               setTimeout(changeQuote, 30000);
+               setTimeout(changeQuote, 10000);
             }
             changeQuote();
             
