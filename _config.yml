@@ -6,10 +6,12 @@ name: Fefanto - github personal page
 #from garthdb-----
 #baseurl: 
 #url: http://www.fefanto.com
-#sass:
-#  sass_dir: css
-#  style: compressed
-#-----------------
+
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
 
 
 gems:
@@ -47,14 +49,14 @@ collections:
     output: true
 #-----------
 
-permalink: pretty
+permalink: "/blog/:categories/:title.html"
 
 exclude: [node_modules, gulpfile.js]
 
 
 # Where are tags and categories displayed
-tag_page: '/blog/tags/'
-category_page: '/blog/categories/'
+tag_page: '/blog/tags.html'
+category_page: '/blog/categories.html'
 
 #TBD
 paginate: 10
