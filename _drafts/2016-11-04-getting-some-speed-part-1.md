@@ -35,7 +35,8 @@ sass:
 
 Then, since I have included bootstrap and angular in my site (for testing and learning purposes) so firts of all I need to get the sass version for those packages.
 
-
+Bootstrap sass can be found at:
+Angular sass  can be found at:
 
 
 
