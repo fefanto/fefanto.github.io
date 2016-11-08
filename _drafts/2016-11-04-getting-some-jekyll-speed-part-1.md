@@ -84,6 +84,29 @@ I had two problems:
 - an error in the css (leftover curly bracket) which did not cause any errors on the site, but killed the jekyll sass compiler - so watch out for your css.
 
 
+## Part 2: Inlining the css
+
+I learned about using Jekyll to embed the css from [garthdb](http://garthdb.com/writings/i-am-a-jekyll-god/). 
+QUOTING:
+It requires you move your main sass (or scss) file to the `_includes` directory and then include it while passing it through the new `sassify` or `scssify` filter. Here’s the example from garthdb blog:
+
+```html
+<head>
+  <style type="text/css">
+    {{"{% capture include_to_scssify " }}%}
+      {{"{% include style.scss " }}%}
+    {{"{% endcapture " }}%}
+    {{ "{{ include_to_scssify | scssify " }}}}
+  </style>
+</head>
+```
+
+So, what I have to to is to decide a final sass folder (with also my main style.scss file) and create an scss file in the _include folder, importing my main file (which in turn will import all references)
+
+
+
+
+
 
 
 

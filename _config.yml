@@ -15,7 +15,7 @@ gems:
 
 
 sass:
-  sass_dir: _sass
+  sass_dir: css
   style: compressed
 
 
